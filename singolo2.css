@@ -102,7 +102,7 @@ main {
 }
 
 .aboutUs .conteiner {
-    padding-top: 43px;
+    padding-top: 46px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: 600px;
@@ -125,7 +125,7 @@ main {
 .aboutUs .conteiner .capsule p {
     padding-top: 8px;
     width: 300px;
-    padding-bottom: 19px;
+    padding-bottom: 22px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -145,7 +145,6 @@ main {
 }
 
 .aboutUs .conteiner .capsule img {
-    padding-top: 3px;
     height: 33px;
     width: 33px;
     padding-right: 3px;
@@ -154,8 +153,5 @@ main {
 
 .aboutUs .conteiner .capsule a > img:hover {
     transition: 0.2s;
-    height: 36px;
-    width: 36px;
-    padding-right: 0px;
-    padding-top: 0px;
+    transform: scale(1.3);
 }
