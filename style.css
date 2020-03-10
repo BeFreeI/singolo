@@ -254,6 +254,8 @@ header nav ul {
     grid-template-columns: repeat(4, 220px);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
+    height: 600px;
+    overflow: hidden;
 }
 
 .aboutUs {
@@ -299,11 +301,13 @@ header nav ul {
 
 .aboutUs .conteiner .capsule h2 {
     padding-top: 14px;
+    height: 18px;
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
     font-weight: 900;
     text-align: left;
+    overflow: hidden;
 }
 
 .aboutUs .conteiner .capsule p {
