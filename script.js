@@ -27,6 +27,7 @@ document.querySelectorAll(".portfolio nav li").forEach((el) => el.addEventListen
         images = images.reverse();
         document.querySelectorAll(".portfolio .conteiner img").forEach((el) => el.classList.remove("activ"));
         document.querySelectorAll(".portfolio .conteiner img").forEach((el, i) => el.src = images[i]);
+        this.classList.add("activ");
     };
 }));
 menu(".portfolio nav li");
@@ -39,3 +40,31 @@ document.querySelectorAll(".portfolio .conteiner img").forEach((el) => {
         }
     })
 });
+
+
+document.querySelectorAll(".arrow").forEach((el) => {
+    el.addEventListener("click", function() {
+        document.querySelector(".slider").classList.toggle("active");
+        document.querySelectorAll(".slide").forEach((el) => el.classList.toggle("active"));
+    })
+})
+
+document.querySelector('.first-buttom').addEventListener('click', ()=>{
+    document.querySelector('.first-display').classList.toggle('off-display');
+})
+
+document.querySelector('.second-buttom').addEventListener('click', ()=>{
+    document.querySelector('.second-display').classList.toggle('off-display');
+})
+
+document.querySelector(".push button").addEventListener("click", function() {
+    document.querySelector(".push").style.display = "none";
+})
+
+document.querySelector("form").addEventListener('submit', function () {
+    const sub = document.querySelector('input[placeholder="Subject"]').value,
+    descript = document.querySelector('textarea[placeholder="Describe your project in detail..."]').value;
+    document.querySelector(".push .subject").innerHTML = (sub)? `Subject: ${sub}` : "Without subject";
+    document.querySelector(".push .discribe").innerHTML = (descript)? `Description: ${descript}` : "Without description";
+    document.querySelector(".push").style.display = "block";
+})

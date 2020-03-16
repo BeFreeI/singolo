@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <metacontent="width=device-width, initial-scale=1.0">
     <title>Singolo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="push">
+        <div>
+            <p>The letter was sent</p>
+            <p class="subject"></p>
+            <p class="discribe"></p>
+            <button>Ok</button>
+        </div>
+    </div>
     <main>
         <header>
             <h1 class="logo">SINGOLO<span>*</span></h1>
@@ -18,14 +28,25 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#contacts">CONTACT</a></li>
                 </ul>
-            <nav>
+                <nav>
         </header>
         <a name="home"></a>
         <section class="slider">
-            <img src="assets/img/iPhoneHorizontal.svg" alt="iPhoneHorizontal">
-            <img src="assets/img/iPhoneVertical.svg" alt="iPhoneVertical">
-            <div class="ArrowLeft"></div>
-            <div class="ArrowRight"></div>
+            <div class="slide first active">
+                <img src="assets/img/iPhoneHorizontal.svg" alt="iPhoneHorizontal">
+                <img src="assets/img/iPhoneVertical.svg" alt="iPhoneVertical">
+                <img src="assets/img/phone-vertical-display.png" alt="vertical-display" class="first-display">
+                <img src="assets/img/phone-vertical-display.png" alt="gorizontal-display" class="second-display">
+                <div class="first-buttom"></div>
+                <div class="second-buttom"></div>
+            </div>
+            <div class="slide second">
+                <img src="assets/img/slider-content-1.png" alt="">
+                <img src="assets/img/slider-content-2.png" alt="">
+                <img src="assets/img/slider-content-1.png" alt="">
+            </div>
+            <div class="ArrowLeft arrow"></div>
+            <div class="ArrowRight arrow"></div>
         </section>
         <div class="services">
             <main>
@@ -74,15 +95,15 @@
                         <img src="assets/img/phone.svg" alt="">
                         <div class="text">
                             <h2>Responsive Layout</h2>
-                                <p>
-                                    Sed porttitor placerat rhoncus. In at nunc tellus.
-                                    Maecenas blandit nunc ligula. Praesent elit leo.
-                                </p>
+                            <p>
+                                Sed porttitor placerat rhoncus. In at nunc tellus.
+                                Maecenas blandit nunc ligula. Praesent elit leo.
+                            </p>
                         </div>
                     </div>
                     <div class="capsule">
                         <img src="assets/img/bubble.svg" alt="">
-                        <div class = "text">
+                        <div class="text">
                             <h2>24/7 Support</h2>
                             <p>
                                 Vivamus vel quam lacinia, tincidunt dui non,
@@ -92,7 +113,7 @@
                     </div>
                     <div class="capsule">
                         <img src="assets/img/star.svg" alt="">
-                        <div class = "text">
+                        <div class="text">
                             <h2>Feel Like A Star</h2>
                             <p>
                                 Quisque hendrerit purus dapibus, ornare nibh vitae,
@@ -120,165 +141,170 @@
             </nav>
             <div class="conteiner">
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project1.png" alt="">
+                    <img src="assets/img/portfolio/Project1.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project2.png" alt="">
+                    <img src="assets/img/portfolio/Project2.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project3.png" alt="">
+                    <img src="assets/img/portfolio/Project3.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project4.png" alt="">
+                    <img src="assets/img/portfolio/Project4.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project5.png" alt="">
+                    <img src="assets/img/portfolio/Project5.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project6.png" alt="">
+                    <img src="assets/img/portfolio/Project6.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project7.png" alt="">
+                    <img src="assets/img/portfolio/Project7.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project8.png" alt="">
+                    <img src="assets/img/portfolio/Project8.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project9.png" alt="">
+                    <img src="assets/img/portfolio/Project9.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project10.png" alt="">
+                    <img src="assets/img/portfolio/Project10.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project11.png" alt="">
+                    <img src="assets/img/portfolio/Project11.png" alt="">
                 </div>
                 <div class="capsule">
-                        <img src="assets/img/portfolio/Project12.png" alt="">
+                    <img src="assets/img/portfolio/Project12.png" alt="">
                 </div>
             </div>
         </section>
         <section class="aboutUs">
             <a name="about"></a>
             <h1>About Us</h1>
-                <p>
-                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                    odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh.
-                </p>
-                <div class="conteiner">
-                    <div class="capsule">
-                        <img class="photo" src="assets/img/portfolio/photo1.png" alt="">
-                        <h2>Adam Jensen</h2>
-                        <p>
-                            Quisque luctus, quam eget molestie commodo,
-                            lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-                        </p>
-                        <div class="SocialNetworks">
-                            <a href="facebbok.com">
-                                <img src="assets/img/portfolio/facebook.svg" alt="">
+            <p>
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum nibh.
+            </p>
+            <div class="conteiner">
+                <div class="capsule">
+                    <img class="photo" src="assets/img/portfolio/photo1.png" alt="">
+                    <h2>Adam Jensen</h2>
+                    <p>
+                        Quisque luctus, quam eget molestie commodo,
+                        lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                    </p>
+                    <div class="SocialNetworks">
+                        <a href="facebbok.com">
+                            <img src="assets/img/portfolio/facebook.svg" alt="">
 
-                            </a>
-                            <a href="google.com">
-                                <img src="assets/img/portfolio/google.svg" alt="">
-                            </a>
-                            <a href="twitter.com">
-                                <img src="assets/img/portfolio/Twitter.svg" alt="">
-                            </a>
-                            <a href="in.com">
-                                <img src="assets/img/portfolio/in.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="capsule">
-                        <img class="photo" src="assets/img/portfolio/photo2.png" alt="">
-                        <h2>Desmond Miles</h2>
-                        <p>
-                            Curabitur vestibulum eget mauris quis laoreet.
-                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                        <div class="SocialNetworks">
-                            <a href="facebbok.com">
-                                <img src="assets/img/portfolio/facebook.svg" alt="">
-
-                            </a>
-                            <a href="google.com">
-                                <img src="assets/img/portfolio/google.svg" alt="">
-                            </a>
-                            <a href="twitter.com">
-                                <img src="assets/img/portfolio/Twitter.svg" alt="">
-                            </a>
-                            <a href="in.com">
-                                <img src="assets/img/portfolio/in.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="capsule">
-                        <img class="photo" src="assets/img/portfolio/photo3.png" alt="">
-                        <h2>Scolara Visari</h2>
-                        <p>
-                            Nulla sed nunc et tortor luctus faucibus.
-                            Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-                        </p>
-                        <div class="SocialNetworks">
-                            <a href="facebbok.com">
-                                <img src="assets/img/portfolio/facebook.svg" alt="">
-
-                            </a>
-                            <a href="google.com">
-                                <img src="assets/img/portfolio/google.svg" alt="">
-                            </a>
-                            <a href="twitter.com">
-                                <img src="assets/img/portfolio/Twitter.svg" alt="">
-                            </a>
-                            <a href="in.com">
-                                <img src="assets/img/portfolio/in.svg" alt="">
-                            </a>
-                        </div>
+                        </a>
+                        <a href="google.com">
+                            <img src="assets/img/portfolio/google.svg" alt="">
+                        </a>
+                        <a href="twitter.com">
+                            <img src="assets/img/portfolio/Twitter.svg" alt="">
+                        </a>
+                        <a href="in.com">
+                            <img src="assets/img/portfolio/in.svg" alt="">
+                        </a>
                     </div>
                 </div>
-            </section>
-             <section class="getQuote">
-                <h1>Get a Quote</h1>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                    odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum.</p>
-                </div>
-                <div class="form-contacts">
-                    <form action="" class="quote__form form">
-                        <input type="text" required placeholder="Name (Required)"><br>
-                        <input type="email" required placeholder="Email (Required)"><br>
-                        <input type="text" placeholder="Subject"><br>
-                        <textarea  maxlength="900" placeholder="Describe your project in detail..."></textarea><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                    <div class="contacts">
-                        <h2>Contact Information</h2>
-                        <p>
-                            Quisque hendrerit purus dapibus, ornare nibh vitae,
-                            viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
-                            volutpat libero. Nulla sed nunc et tortor luctus faucibus.
-                            Morbi at aliquet turpis, et consequat felis.
-                        </p>
-                        <div class="contactsInfo">
-                            <p><span><img src = "assets/img/part3/location.svg"></span>Elm St. 14/05 Lost City</p>
-                            <p><span><img src = "assets/img/part3/phone.svg"></span><a href="tel:+35283318635">03528 331 86 35</a></p>
-                            <p><span><img src = "assets/img/part3/mail.svg"></span><a href="mailto:info@singolo.com">info@singolo.com</a></p>
-                        </div>
+                <div class="capsule">
+                    <img class="photo" src="assets/img/portfolio/photo2.png" alt="">
+                    <h2>Desmond Miles</h2>
+                    <p>
+                        Curabitur vestibulum eget mauris quis laoreet.
+                        Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                    </p>
+                    <div class="SocialNetworks">
+                        <a href="facebbok.com">
+                            <img src="assets/img/portfolio/facebook.svg" alt="">
+
+                        </a>
+                        <a href="google.com">
+                            <img src="assets/img/portfolio/google.svg" alt="">
+                        </a>
+                        <a href="twitter.com">
+                            <img src="assets/img/portfolio/Twitter.svg" alt="">
+                        </a>
+                        <a href="in.com">
+                            <img src="assets/img/portfolio/in.svg" alt="">
+                        </a>
                     </div>
-                 </div>
-             </section>
-             <footer>
-                 <div class="copyright"><p>&#169 Copyright 2013</p></div>
-                 <a name="contacts"></a>
-                 <div class="contacts">
-                     <img src="assets/img/portfolio/facebook.svg" alt="">
-                     <img src="assets/img/portfolio/google.svg" alt="">
-                     <img src="assets/img/portfolio/Twitter.svg" alt="">
-                     <img src="assets/img/portfolio/in.svg" alt="">
-                 </div>
-             </footer>
-             <script src="script.js"></script>
+                </div>
+                <div class="capsule">
+                    <img class="photo" src="assets/img/portfolio/photo3.png" alt="">
+                    <h2>Scolara Visari</h2>
+                    <p>
+                        Nulla sed nunc et tortor luctus faucibus.
+                        Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                    </p>
+                    <div class="SocialNetworks">
+                        <a href="facebbok.com">
+                            <img src="assets/img/portfolio/facebook.svg" alt="">
+
+                        </a>
+                        <a href="google.com">
+                            <img src="assets/img/portfolio/google.svg" alt="">
+                        </a>
+                        <a href="twitter.com">
+                            <img src="assets/img/portfolio/Twitter.svg" alt="">
+                        </a>
+                        <a href="in.com">
+                            <img src="assets/img/portfolio/in.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="getQuote">
+            <h1>Get a Quote</h1>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum.</p>
+            </div>
+            <div class="form-contacts">
+                <form onsubmit="return false">
+                    <input type="text" required placeholder="Name (Required)"><br>
+                    <input type="email" required placeholder="Email (Required)"><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <textarea maxlength="900" placeholder="Describe your project in detail..."></textarea><br>
+                    <input type="submit" value="submit">
+                </form>
+                <div class="contacts">
+                    <h2>Contact Information</h2>
+                    <p>
+                        Quisque hendrerit purus dapibus, ornare nibh vitae,
+                        viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
+                        volutpat libero. Nulla sed nunc et tortor luctus faucibus.
+                        Morbi at aliquet turpis, et consequat felis.
+                    </p>
+                    <div class="contactsInfo">
+                        <p><span><img src="assets/img/part3/location.svg"></span>Elm St. 14/05 Lost City</p>
+                        <p><span><img src="assets/img/part3/phone.svg"></span><a href="tel:+35283318635">03528 331 86
+                                35</a></p>
+                        <p><span><img src="assets/img/part3/mail.svg"></span><a
+                                href="mailto:info@singolo.com">info@singolo.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p>&#169 Copyright 2013</p>
+            </div>
+            <a name="contacts"></a>
+            <div class="contacts">
+                <img src="assets/img/portfolio/facebook.svg" alt="">
+                <img src="assets/img/portfolio/google.svg" alt="">
+                <img src="assets/img/portfolio/Twitter.svg" alt="">
+                <img src="assets/img/portfolio/in.svg" alt="">
+            </div>
+        </footer>
+        <script src="script.js"></script>
 </body>
+
 </html>
