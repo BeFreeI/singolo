@@ -322,7 +322,10 @@ header nav ul {
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     height: 600px;
-    overflow: hidden;
+}
+
+.portfolio .conteiner .capsule:nth-child(n + 13) {
+    display: none;
 }
 
 .portfolio .conteiner img {
