@@ -5,7 +5,20 @@ function menu(selector){
 }));
 }
 
-menu(".menu a");
+document.addEventListener("scroll", function () {
+    const Elements = document.querySelectorAll(".section"),
+        links = document.querySelectorAll(".menu a");
+    document.querySelectorAll(".menu a").forEach((el) => el.classList.remove("activ"));
+    for(let el of Elements) {
+        if(el.offsetTop >= window.pageYOffset && (el.offsetTop + el.offsetHeight) > window.pageYOffset) {
+            links.forEach((link) => {
+                if(el.getAttribute("id") === link.getAttribute("href").substring(1))
+                    link.classList.add("activ");
+            });
+            break;
+        }
+    }
+})
 
 let images = [
     "assets/img/portfolio/Project1.png",

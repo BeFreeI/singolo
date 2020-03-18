@@ -9,6 +9,10 @@
     margin: 0px;
 }
 
+body, html {
+    scroll-behavior: smooth;
+}
+
 main {
     width: 1020px;
     margin: auto;
@@ -17,7 +21,7 @@ main {
 header {
     z-index: 1;
     position: sticky;
-    top: 0px;
+    top: -0;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -0.02em;
