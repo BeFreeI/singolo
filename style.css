@@ -9,12 +9,19 @@
     margin: 0px;
 }
 
+body, html {
+    scroll-behavior: smooth;
+}
+
 main {
     width: 1020px;
     margin: auto;
 }
 
 header {
+    z-index: 1;
+    position: sticky;
+    top: -0;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -0.02em;
@@ -35,9 +42,16 @@ header {
     float: left;
 }
 
-header nav ul li:hover {
+header nav ul a:hover {
+    transition: 0.2s;
     cursor: pointer;
     color: #f06c64;
+}
+
+header nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 header nav ul li::before {
@@ -48,7 +62,7 @@ header nav ul li::before {
     color: #494e62;
 }
 
-header nav ul li:first-child {
+header nav ul a.activ {
     color: #f06c64;
 }
 
@@ -57,7 +71,6 @@ header nav ul li:first-child::before {
 }
 
 header nav ul {
-    font-size: 12px;
     list-style: none;
     padding-top: 43px;
     padding-left: 15px;
@@ -70,6 +83,68 @@ header nav ul {
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+}
+
+.slide{
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+.slider.active{
+    background-color: #648bf0;
+}
+
+.slider .second img:nth-child(1) {
+    top: 152px;
+    left: 252px;
+}
+.slider .second img:nth-child(2) {
+    top: 43px;
+    left: 383px;
+}
+.slider .second img:nth-child(3) {
+    top: 152px;
+    left: 612px;
+}
+
+.slider .slide div {
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0);
+    cursor: pointer;
+}
+.slider .second-buttom {
+    z-index: 2;
+    top: 260px;
+    left: 432px
+}
+
+.slider .first-buttom {
+    z-index: 2;
+    top: 460px;
+    left: 197px
+}
+
+.slide .first-display{
+    z-index: 2;
+    top: 118px;
+    left: 126px;
+    display: none;
+}
+.slide .second-display{
+    transform: rotate(100grad);
+    display: none;
+    z-index: 2;
+    top: 115px;
+    left: 558px
+}
+.off-display{
+    display: block !important;
 }
 
 .services {
@@ -137,7 +212,6 @@ header nav ul {
 
 .ArrowRight:hover {
     cursor: pointer;
-    ;
 }
 
 .ArrowLeft:hover {
@@ -189,9 +263,6 @@ header nav ul {
     width: 60px;
 }
 
-
-
-
 .portfolio {
     height: 863px;
     padding-left: 40px;
@@ -223,7 +294,7 @@ header nav ul {
     display: flex;
 }
 
-.portfolio nav li:first-child {
+.portfolio nav li.activ {
     color: #c5c5c5;
     border: 1px solid #c5c5c5;
 }
@@ -255,7 +326,18 @@ header nav ul {
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     height: 600px;
-    overflow: hidden;
+}
+
+.portfolio .conteiner .capsule:nth-child(n + 13) {
+    display: none;
+}
+
+.portfolio .conteiner img {
+    cursor: pointer;
+}
+
+.portfolio .conteiner img.activ {
+    box-shadow: 0 0 0 5px #f06c64;
 }
 
 .aboutUs {
@@ -474,3 +556,28 @@ footer .copyright{
     top: 21px;
     right: 40px;
   }
+
+  .push > div {
+      border-radius: 5px;
+      background-color: rgb(255,255,255) !important;
+      height: auto;
+      width: 30%;
+      margin: auto;
+      margin-top: 15%;
+      padding: 5px;
+  }
+  .push p:first-child{
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+  }
+
+.push {
+    display: none;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
